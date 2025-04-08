@@ -3,8 +3,8 @@ package dto
 import "school-service/domain/enums"
 
 type SchoolRequest struct {
-	Name        string
-	Title       string
-	SchoolLevel enums.SchoolLevel
-	SchoolType  enums.SchoolType
+	Name        string            `json:"name"`
+	Title       string            `json:"title"`
+	SchoolLevel enums.SchoolLevel `json:"schoolLevel"`
+	SchoolType  enums.SchoolType  `json:"schoolType"`
 }
